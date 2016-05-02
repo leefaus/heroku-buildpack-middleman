@@ -11,9 +11,9 @@ HOME_BACK=$HOME
 export HOME=$1
 
 # Source in all the profile stuff
-for profile in ./.profile.d/*; do
-    . ${profile}
-done
+#for profile in ./.profile.d/*; do
+#    . ${profile}
+#done
 
 # If there is an env dir, source it
 if [ -d "$3" ]; then
