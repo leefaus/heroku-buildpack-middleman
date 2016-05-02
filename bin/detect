@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
+cd resources
 
 if [ -f $1/config.rb ]; then
     grep "middleman" $1/Gemfile.lock >/dev/null
