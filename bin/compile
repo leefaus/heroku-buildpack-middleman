@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir> <env-dir>
 
-export HOME=$HOME/resources
+export HOME=$1/resources
 
 # Work in the build directory
-cd $1
+#cd $1
 
 # Set HOME to build directory in order to get the bundle command in the PATH
-HOME_BACK=$HOME
-export HOME=$1
+#HOME_BACK=$HOME
+#export HOME=$1
 
 # Source in all the profile stuff
 #for profile in ./.profile.d/*; do
@@ -24,7 +24,8 @@ if [ -d "$3" ]; then
 fi
 
 # Set HOME back to default value
-export HOME=$HOME_BACK
+#export HOME=$HOME_BACK
+ls $HOME
 
 cd $HOME
 
