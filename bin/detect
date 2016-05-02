@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
-cd resources
 
-if [ -f $1/config.rb ]; then
-    grep "middleman" $1/Gemfile.lock >/dev/null
+if [ -f $1/resources/config.rb ]; then
+    grep "middleman" $1/resources/Gemfile.lock >/dev/null
     if [ $? -eq 0 ]; then
         echo "Middleman"
         exit 0

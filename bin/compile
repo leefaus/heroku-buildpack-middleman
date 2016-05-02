@@ -22,9 +22,7 @@ if [ -d "$3" ]; then
 fi
 
 # Set HOME back to default value
-export HOME=$HOME_BACK
-
-cd resources
+export HOME=$HOME_BACK/resources
 
 # Just build the static site
 bundle exec middleman build --clean --verbose
