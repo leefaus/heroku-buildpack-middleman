@@ -2,7 +2,7 @@
 # bin/release <build-dir>
 
 # Just an empty hash, we don't do anything by default
-sh cd $1/resources
+cd $1/resources
 
 cat <<EOF
 ---
