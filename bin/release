@@ -2,8 +2,10 @@
 # bin/release <build-dir>
 
 # Just an empty hash, we don't do anything by default
+sh cd $1/resources
+
 cat <<EOF
 ---
 default_process_types:
-  web: sh cd $1/resources && bundle exec middleman server -p \$PORT
+  web: bundle exec middleman server -p \$PORT
 EOF
