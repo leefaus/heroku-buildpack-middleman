@@ -25,9 +25,11 @@ fi
 
 # Set HOME back to default value
 #export HOME=$HOME_BACK
-ls $HOME
+#ls $HOME
 
 cd $HOME
+
+bundle install
 
 # Just build the static site
 bundle exec middleman build --clean --verbose
