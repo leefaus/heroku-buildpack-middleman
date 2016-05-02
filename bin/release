@@ -5,5 +5,5 @@
 cat <<EOF
 ---
 default_process_types:
-  web: bundle exec middleman server -p \$PORT
+  web: sh cd $1/resources && bundle exec middleman server -p \$PORT
 EOF

@@ -32,4 +32,4 @@ cd $HOME
 bundle install
 
 # Just build the static site
-bundle exec middleman build --clean --verbose
+#bundle exec middleman build --clean --verbose
